@@ -1,0 +1,3 @@
+C:/Users/iroen/OneDrive/Documents/STM32CubeIDE/HID_Devices/F-4_B8_Controller_by_f103C6T6/build/debug/build/CMakeFiles/F-4_B8_Controller_by_f103C6T6.dir
+C:/Users/iroen/OneDrive/Documents/STM32CubeIDE/HID_Devices/F-4_B8_Controller_by_f103C6T6/build/debug/build/CMakeFiles/edit_cache.dir
+C:/Users/iroen/OneDrive/Documents/STM32CubeIDE/HID_Devices/F-4_B8_Controller_by_f103C6T6/build/debug/build/CMakeFiles/rebuild_cache.dir

@@ -57,6 +57,28 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define X_Pin GPIO_PIN_0
+#define X_GPIO_Port GPIOA
+#define Y_Pin GPIO_PIN_1
+#define Y_GPIO_Port GPIOA
+#define Brake_Pin GPIO_PIN_2
+#define Brake_GPIO_Port GPIOA
+#define OUT0_Pin GPIO_PIN_3
+#define OUT0_GPIO_Port GPIOA
+#define OUT1_Pin GPIO_PIN_4
+#define OUT1_GPIO_Port GPIOA
+#define OUT2_Pin GPIO_PIN_5
+#define OUT2_GPIO_Port GPIOA
+#define BUTTON_1_Pin GPIO_PIN_0
+#define BUTTON_1_GPIO_Port GPIOB
+#define BUTTON_2_Pin GPIO_PIN_1
+#define BUTTON_2_GPIO_Port GPIOB
+#define IN0_Pin GPIO_PIN_12
+#define IN0_GPIO_Port GPIOB
+#define IN1_Pin GPIO_PIN_13
+#define IN1_GPIO_Port GPIOB
+#define IN2_Pin GPIO_PIN_14
+#define IN2_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

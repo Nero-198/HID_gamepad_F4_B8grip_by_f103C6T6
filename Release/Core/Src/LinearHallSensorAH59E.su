@@ -1,0 +1,4 @@
+../Core/Src/LinearHallSensorAH59E.cpp:21:1:LinearHallSensor_AH59E::~LinearHallSensor_AH59E()	0	static
+../Core/Src/LinearHallSensorAH59E.cpp:21:1:virtual LinearHallSensor_AH59E::~LinearHallSensor_AH59E()	8	static
+../Core/Src/LinearHallSensorAH59E.cpp:11:1:LinearHallSensor_AH59E::LinearHallSensor_AH59E(ADC_HandleTypeDef*)	8	static
+../Core/Src/LinearHallSensorAH59E.cpp:25:10:uint32_t LinearHallSensor_AH59E::getVal()	8	static
