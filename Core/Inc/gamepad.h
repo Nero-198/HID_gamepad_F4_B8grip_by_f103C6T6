@@ -18,11 +18,11 @@
 class gamepad
 {
 public:
-    gamepad(/* args */);
+    gamepad();
     ~gamepad();
 
     gamepad_digital_input_driver digital_input;
-    gamepad_analog_input_driver analog_input;
+    gamepad_analog_input_driver analog_input(ADC_HandleTypeDef* hadc);
 
     typedef enum
     {

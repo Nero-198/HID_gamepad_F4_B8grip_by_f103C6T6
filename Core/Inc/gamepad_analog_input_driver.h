@@ -33,24 +33,20 @@ public:
 
     //functions
     //setter 関数
-    void set_adc_channel(Axis  axis, ADC_HandleTypeDef* hadc, uint32_t channel, uint32_t rank);
+    void set_adc_channel();
     uint32_t get_ADC_Value();
 
     //values
     uint32_t ADC_val[4];
 
-
 private:
-        struct ADCConfig {
+    typedef struct ADCConfig {
         ADC_HandleTypeDef* hadc;
         uint32_t channel;
         uint32_t rank;
-    };
+    }ADC_config_t;
 
-    ADCConfig adc_configs[static_cast<size_t>(AnalogAxis::NUM_AXES)];
+    ADC_config_t adc_configs[4];
 };
-
-
-
 
 #endif  /*GAMEPAD_ANALOG_INPUT_DRIVER_H*/

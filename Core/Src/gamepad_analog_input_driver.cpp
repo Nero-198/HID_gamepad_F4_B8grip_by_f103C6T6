@@ -5,16 +5,16 @@
  *      Author: iroen
  */
 
-#include <gamepad_axis_driver.h>
+#include <gamepad_analog_input_driver.h>
 
-gamepad_axis_driver::gamepad_axis_driver(/* args */)
+gamepad_analog_input_driver::gamepad_analog_input_driver(ADC_HandleTypeDef* hadc)
 {
 }
 
-gamepad_axis_driver::~gamepad_axis_driver()
+gamepad_analog_input_driver::~gamepad_analog_input_driver()
 {
 }
 
-void set_adc_channel(Axis  axis, ADC_HandleTypeDef* hadc, uint32_t channel, uint32_t rank){
-    
+void gamepad_analog_input_driver::set_adc_channel()
+{
 }

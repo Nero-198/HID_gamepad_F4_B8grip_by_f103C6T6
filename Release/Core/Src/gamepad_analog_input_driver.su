@@ -1,0 +1,4 @@
+../Core/Src/gamepad_analog_input_driver.cpp:14:1:gamepad_analog_input_driver::~gamepad_analog_input_driver()	0	static
+../Core/Src/gamepad_analog_input_driver.cpp:14:1:virtual gamepad_analog_input_driver::~gamepad_analog_input_driver()	8	static
+../Core/Src/gamepad_analog_input_driver.cpp:10:1:gamepad_analog_input_driver::gamepad_analog_input_driver(ADC_HandleTypeDef*)	0	static
+../Core/Src/gamepad_analog_input_driver.cpp:18:6:void gamepad_analog_input_driver::set_adc_channel()	0	static

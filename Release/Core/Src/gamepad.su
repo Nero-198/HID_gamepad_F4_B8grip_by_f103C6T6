@@ -1,0 +1,7 @@
+../Core/Src/gamepad.cpp:12:1:gamepad::gamepad()	8	static
+../Core/Src/gamepad.cpp:16:1:gamepad::~gamepad()	8	static
+../Core/Src/gamepad.cpp:20:17:gamepad::status gamepad::init_gamepad()	32	static
+../Core/Src/gamepad.cpp:56:6:void gamepad::setButton(GPIO_TypeDef*, uint16_t, uint8_t)	0	static
+../Core/Src/gamepad.cpp:60:6:void gamepad::set_input_key_matrix(GPIO_TypeDef*, uint16_t, uint8_t)	0	static
+../Core/Src/gamepad.cpp:64:6:void gamepad::set_output_key_matrix(GPIO_TypeDef*, uint16_t, uint8_t)	0	static
+../Core/Src/gamepad.cpp:68:9:uint8_t gamepad::SendUSB(USBD_HandleTypeDef*, gamepad::gamepadHID_t*, uint16_t)	0	static
