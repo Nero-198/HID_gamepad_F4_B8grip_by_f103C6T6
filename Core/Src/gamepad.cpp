@@ -9,7 +9,7 @@
 #include "usb_device.h"
 
 
-gamepad::gamepad(/* args */)
+gamepad::gamepad()
 {
 }
 
@@ -17,26 +17,27 @@ gamepad::~gamepad()
 {
 }
 
-status gamepad::init_gamepad(){
+gamepad::status gamepad::init_gamepad(){
 	//matrix_to_HID_buttonから行列の数を取得
-	uint8_t input_num = 0;
-	uint8_t output_num = 0;
+	size_t input_num = 0;
+	size_t output_num = 0;
 	uint8_t HID_button = 0;
 
-	if (!gamepad_digital_input_driver.matrix_to_HID_button.empty()) {
+	if (!digital_input.matrix_to_HID_button.empty()) {
 	// 行数を取得
-		input_num = gamepad_digital_input_driver.matrix_to_HID_button.size();
+		input_num = digital_input.matrix_to_HID_button.size();
 
     	// 最初の行が存在する場合のみ列数を取得
-		if (!gamepad_digital_input_driver.matrix_to_HID_button[0].empty()) {
-			output_num = gamepad_digital_input_driver.matrix_to_HID_button[0].size();
+		if (!digital_input.matrix_to_HID_button[0].empty()) {
+			output_num = digital_input.matrix_to_HID_button[0].size();
 		}
 	}
-	if (gamepad_digital_input_driver.input_key_matrix.size() != input_num)
+	std::pair<size_t, size_t> matrix_size = digital_input.get_matrix_to_HID_button_size();
+	if (matrix_size.first != input_num)  // 行数が一致するかアサーション
 	{
 		return ERROR;
 	}
-	if (gamepad_digital_input_driver.output_key_matrix.size() != output_num)
+	if (matrix_size.second != output_num)// 列数が一致するかアサーション
 	{
 		return ERROR;
 	}
@@ -45,8 +46,8 @@ status gamepad::init_gamepad(){
 	{
 		for (uint8_t o = 0; o < output_num; i++)
 		{
-			HID_button = gamepad_digital_input_driver.matrix_to_HID_button[i][o];
-			gamepad_digital_input_driver.set_matrix_to_HID_button(i, o, HID_button);
+			HID_button = digital_input.matrix_to_HID_button[i][o];
+			digital_input.set_matrix_to_HID_button(i, o, HID_button);
 		}
 	}
 	return OK;
@@ -56,11 +57,11 @@ void gamepad::setButton(GPIO_TypeDef* port, uint16_t pin, uint8_t HID_button){
 	digital_input.setButton(port, pin, HID_button);	//gamepad_digital_input_driver digital_input;
 }
 
-void set_input_key_matrix(GPIO_TypeDef* port, uint16_t pin, uint8_t input_num){
+void gamepad::set_input_key_matrix(GPIO_TypeDef* port, uint16_t pin, uint8_t input_num){
 	digital_input.set_input_key_matrix(port, pin, input_num);
 }
 
-void set_output_key_matrix(GPIO_TypeDef* port, uint16_t pin, uint8_t output_num){
+void gamepad::set_output_key_matrix(GPIO_TypeDef* port, uint16_t pin, uint8_t output_num){
 	digital_input.set_output_key_matrix(port, pin, output_num);
 }
 

@@ -22,11 +22,17 @@ public:
     std::vector<std::vector<uint8_t>> matrix_to_HID_button; // 横列(行)はinput、縦列(列)はoutput。マトリクスの入力とHID_gamepadのボタンの対応付けを行う。
 
     uint8_t init_gamepad_digital_input_driver(); //初期化関数。マトリクスの数などの設定を行う。
-    void getButtonVal();
+    void readButton();
     void setButton(GPIO_TypeDef* port, uint16_t pin, uint8_t HID_button); //butoon = pin name or pin number
     void set_input_key_matrix(GPIO_TypeDef* port, uint16_t pin, uint8_t input_num);
     void set_output_key_matrix(GPIO_TypeDef* port, uint16_t pin, uint8_t output_num);
     void set_matrix_to_HID_button(uint8_t input_num, uint8_t output_num, uint8_t HID_button);
+
+    //----struct getter----
+    size_t get_button_size();
+    size_t get_input_key_matrix_size();
+    size_t get_output_key_matrix_size();
+    std::pair<size_t, size_t> get_matrix_to_HID_button_size()const;
 
 
 private:

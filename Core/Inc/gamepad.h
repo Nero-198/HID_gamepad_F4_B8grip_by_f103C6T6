@@ -24,11 +24,11 @@ public:
     gamepad_digital_input_driver digital_input;
     gamepad_analog_input_driver analog_input;
 
-    enum status
+    typedef enum
     {
         OK = 0,
         ERROR = 1,
-    };
+    }status;
 
     typedef struct{
         uint8_t buttons[BUTTONS_DATA_BUFFER_SIZE];
@@ -36,7 +36,7 @@ public:
     }gamepadHID_t;
 
     //---------------func----------------
-    uint8_t init_gamepad(); //初期化関数。マトリクスの数などの設定を行う。
+    gamepad::status init_gamepad(); //初期化関数。マトリクスの数などの設定を行う。
     //--------setter-------
     //実際のボタンとHID_gamepadのボタンの対応付け
     void setButton(GPIO_TypeDef* port, uint16_t pin, uint8_t HID_button); //butoon = pin name or pin number
@@ -51,8 +51,5 @@ public:
 private:
 
 };
-
-
-
 
 #endif /*GAMEPAD_H*/

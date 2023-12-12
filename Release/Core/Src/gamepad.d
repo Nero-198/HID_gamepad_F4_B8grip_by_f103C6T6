@@ -29,7 +29,7 @@ Core/Src/gamepad.o: ../Core/Src/gamepad.cpp ../Core/Inc/gamepad.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
  ../Core/Inc/gamepad_analog_input_driver.h \
- ../Core/Inc/gamepad_digital_input_driver.h \
+ ../Core/Inc/gamepad_digital_input_driver.h ../Core/Inc/alt_main.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
@@ -72,6 +72,7 @@ Core/Src/gamepad.o: ../Core/Src/gamepad.cpp ../Core/Inc/gamepad.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h:
 ../Core/Inc/gamepad_analog_input_driver.h:
 ../Core/Inc/gamepad_digital_input_driver.h:
+../Core/Inc/alt_main.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:

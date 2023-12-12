@@ -41,7 +41,7 @@ Core/Src/alt_main.o: ../Core/Src/alt_main.cpp \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
  ../Core/Inc/gamepad.h ../Core/Inc/gamepad_analog_input_driver.h \
- ../Core/Inc/gamepad_digital_input_driver.h
+ ../Core/Inc/gamepad_digital_input_driver.h ../Core/Inc/alt_main.h
 ../Core/Inc/LinearHallSensorAH59E.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -90,3 +90,4 @@ Core/Src/alt_main.o: ../Core/Src/alt_main.cpp \
 ../Core/Inc/gamepad.h:
 ../Core/Inc/gamepad_analog_input_driver.h:
 ../Core/Inc/gamepad_digital_input_driver.h:
+../Core/Inc/alt_main.h:

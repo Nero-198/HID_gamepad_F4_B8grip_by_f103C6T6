@@ -63,3 +63,8 @@
 42	853	7240727144850207	CMakeFiles/F-4_B8_Controller_by_f103C6T6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj	6550861697cc8b2e
 65	1183	7240727146242379	CMakeFiles/F-4_B8_Controller_by_f103C6T6.dir/USB_DEVICE/App/usb_device.c.obj	223b8e9f2b92fa5
 32	1444	7240727150790638	CMakeFiles/F-4_B8_Controller_by_f103C6T6.dir/Core/Src/gamepad_digital_input_driver.cpp.obj	76b39d4a7f7e8cee
+362	1709	7240734934749563	CMakeFiles/F-4_B8_Controller_by_f103C6T6.dir/USB_DEVICE/App/usbd_desc.c.obj	58e9f6b0d47a274e
+377	1767	7240734935229542	CMakeFiles/F-4_B8_Controller_by_f103C6T6.dir/USB_DEVICE/Target/usbd_conf.c.obj	9ca8c34edbb93edf
+353	1853	7240734936269491	CMakeFiles/F-4_B8_Controller_by_f103C6T6.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj	884029d231362738
+338	2177	7240734939629882	CMakeFiles/F-4_B8_Controller_by_f103C6T6.dir/Core/Src/gamepad_digital_input_driver.cpp.obj	76b39d4a7f7e8cee
+183	1823	7240782715680531	CMakeFiles/F-4_B8_Controller_by_f103C6T6.dir/Core/Src/gamepad_digital_input_driver.cpp.obj	76b39d4a7f7e8cee
